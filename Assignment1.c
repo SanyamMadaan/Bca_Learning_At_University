@@ -2,6 +2,23 @@
 
 int main()
 {
-  //add your code here
+  	int i,positive=0,negative=0,n,k;
+	printf("Enter a number of inputs: ");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&k);
+		if(k>0)
+		{
+			positive=positive+1;
+		}
+		else
+		{
+			negative=negative+1;
+		}
+	}
+	printf("Number of positive number are: %d\n",positive);
+	printf("Number of negative number are: %d",negative);
+
   return 0;
 }
